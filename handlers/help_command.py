@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from telegram import Update
 from telegram.ext import ContextTypes
 
@@ -23,7 +23,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "- reset\n"
         "- help\n"
     )
-=======
+
 def help_command(update, context):
     update.message.reply_text("Help command triggered")
->>>>>>> 0cad325 (V2 commit)
+
