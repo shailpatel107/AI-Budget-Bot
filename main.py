@@ -1,5 +1,7 @@
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 from handlers.add import add
+from handlers.summary import summary
+
 from handlers.attach import attach
 from handlers.edit import edit
 from handlers.transfer import transfer
@@ -22,6 +24,8 @@ app = ApplicationBuilder().token(TOKEN).build()
 
 # Slash commands
 app.add_handler(CommandHandler("add", add))
+app.add_handler(CommandHandler("summary", summary))
+
 app.add_handler(CommandHandler("attach", attach))
 app.add_handler(CommandHandler("edit", edit))
 app.add_handler(CommandHandler("transfer", transfer))
