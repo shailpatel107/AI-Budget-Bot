@@ -16,6 +16,8 @@ import os
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 app = ApplicationBuilder().token(TOKEN).build()
 
 # Slash commands
