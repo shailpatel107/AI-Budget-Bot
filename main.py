@@ -9,6 +9,7 @@ from handlers.raiz import raizshare, raizdividends, raizinvested, raizwithdraw
 from handlers.reset import ruleoverride, reset
 from handlers.help_command import help_command
 from handlers.text_parser import handle_text_command
+from handlers.start import start
 from dotenv import load_dotenv
 import os
 
@@ -30,6 +31,7 @@ app.add_handler(CommandHandler("raizinvested", raizinvested))
 app.add_handler(CommandHandler("raizwithdraw", raizwithdraw))
 app.add_handler(CommandHandler("ruleoverride", ruleoverride))
 app.add_handler(CommandHandler("reset", reset))
+application.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help", help_command))
 
 # Text-based commands (no slash)
