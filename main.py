@@ -33,7 +33,7 @@ app.add_handler(CommandHandler("raizinvested", raizinvested))
 app.add_handler(CommandHandler("raizwithdraw", raizwithdraw))
 app.add_handler(CommandHandler("ruleoverride", ruleoverride))
 app.add_handler(CommandHandler("reset", reset))
-application.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help", help_command))
 
 # Text-based commands (no slash)
