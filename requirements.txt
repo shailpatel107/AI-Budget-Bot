@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+python-telegram-bot==20.6
+=======
+python-telegram-bot==20.3
+supabase-py==2.1.0
+python-dotenv
+>>>>>>> 0cad325 (V2 commit)
